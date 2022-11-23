@@ -1,0 +1,106 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{3w}{article}{}
+      \name{author}{9}{}{%
+        {{hash=e963f72afed36971993e91e55ff86b89}{%
+           family={Vargas},
+           familyi={V\bibinitperiod},
+           given={Ricardo\bibnamedelimb Emanuel\bibnamedelima Vaz},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=c61f59187f9524e2abd8ddca44f3ee7d}{%
+           family={Munaro},
+           familyi={M\bibinitperiod},
+           given={Celso\bibnamedelima José},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e88cc3ec6f3bfc6ea9f5737f6bb20a65}{%
+           family={Ciarelli},
+           familyi={C\bibinitperiod},
+           given={Patrick\bibnamedelima Marques},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3178f1d4910354c5daeb7191db76f7d0}{%
+           family={Medeiros},
+           familyi={M\bibinitperiod},
+           given={André\bibnamedelima Gonçalves},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=844f220e61aed8e47e42710c144e16a4}{%
+           family={Amaral},
+           familyi={A\bibinitperiod},
+           given={Bruno\bibnamedelima Guberfain},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={do},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=d09249ca7410517809f5d52e36b3def6}{%
+           family={Barrionuevo},
+           familyi={B\bibinitperiod},
+           given={Daniel\bibnamedelima Centurion},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=5175bea7d639b2944de81c300ba87c9f}{%
+           family={Araújo},
+           familyi={A\bibinitperiod},
+           given={Jean\bibnamedelimb Carlos\bibnamedelima Dias},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=50a0c1efc43f0cf54755af5d78fdec5f}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Jorge\bibnamedelima Lins},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2c14d4d895d2d962fb7d790d0efd7131}{%
+           family={Magalhães},
+           familyi={M\bibinitperiod},
+           given={Lucas\bibnamedelima Pierezan},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a13ad90cf599a851444d65d749c416b2}
+      \strng{fullhash}{5b6bc04c0adb09c2a31cfdbb62251b63}
+      \strng{bibnamehash}{a13ad90cf599a851444d65d749c416b2}
+      \strng{authorbibnamehash}{a13ad90cf599a851444d65d749c416b2}
+      \strng{authornamehash}{a13ad90cf599a851444d65d749c416b2}
+      \strng{authorfullhash}{5b6bc04c0adb09c2a31cfdbb62251b63}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Detection of undesirable events in oil and gas wells can help prevent production losses, environmental accidents, and human casualties and reduce maintenance costs. The scarcity of measurements in such processes is a drawback due to the low reliability of instrumentation in such hostile environments. Another issue is the absence of adequately structured data related to events that should be detected. To contribute to providing a priori knowledge about undesirable events for diagnostic algorithms in offshore naturally flowing wells, this work presents an original and valuable dataset with instances of eight types of undesirable events characterized by eight process variables. Many hours of expert work were required to validate historical instances and to produce simulated and hand-drawn instances that can be useful to distinguish normal and abnormal actual events under different operating conditions. The choices made during this dataset's preparation are described and justified, and specific benchmarks that practitioners and researchers can use together with the published dataset are defined. This work has resulted in two relevant contributions. A challenging public dataset that can be used as a benchmark for the development of (i) machine learning techniques related to inherent difficulties of actual data, and (ii) methods for specific tasks associated with detecting and diagnosing undesirable events in offshore naturally flowing oil and gas wells. The other contribution is the proposal of the defined benchmarks.}
+      \field{issn}{0920-4105}
+      \field{journaltitle}{Journal of Petroleum Science and Engineering}
+      \field{title}{A realistic and public dataset with rare undesirable real events in oil wells}
+      \field{volume}{181}
+      \field{year}{2019}
+      \field{pages}{106223}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.petrol.2019.106223
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0920410519306357
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0920410519306357
+      \endverb
+      \keyw{Fault detection and diagnosis,Oil well monitoring,Abnormal event management,Multivariate time series classification}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

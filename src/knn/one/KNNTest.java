@@ -1,12 +1,11 @@
 package knn.one;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
-
-import javax.swing.JOptionPane;
 
 import net.sf.javaml.core.Dataset;
 import net.sf.javaml.core.Instance;
@@ -16,14 +15,14 @@ import net.sf.javaml.tools.data.FileHandler;
 public class KNNTest
 {
 	
-	public double TrainandClassify(int k, Dataset train, Dataset test)
+	public void TrainandClassify(int k, Dataset train, Dataset test)
 	{
 		KNN knn = new KNN();
 		knn.Init(k);
 		knn.Build(train);
 		Random r = new Random();
 		int size = test.size();
-		int sigma = r.nextInt(1000);
+		int sigma = 200;
 		int[] ind = new int[sigma];
 		for(int i = 0;i < sigma;i++)
 			ind[i] = r.nextInt(size);
@@ -37,39 +36,48 @@ public class KNNTest
 			if(predicted.equals(inst.classValue()))
 				correct++;
 		}
-		double C = correct;
-		return C / sigma;
-		
+		try
+		{
+			FileWriter fw = new FileWriter("./Real_Ans.csv");
+			//TODO output data for visualization
+			fw.write("Real_index,Real_class\n");
+			for(int i = 0;i < sigma;i++)
+			{
+				Instance inst = test.instance(ind[i]);
+				fw.write(i + "," + inst.classValue() + "\n");
+			}
+			fw.close();
+			fw = new FileWriter("./Predicted_Ans.csv");
+			fw.write("Predicted_index,Predicted_class\n");
+			for(int i = 0;i < sigma;i++)
+			{
+				Instance inst = test.instance(ind[i]);
+				fw.write(i + "," + knn.classify(inst) + "\n");
+			}
+			fw.close();
+		}
+		catch(IOException e)
+		{
+			System.out.println("Something went wrong");
+			e.printStackTrace();
+		}
+		System.out.println("Correct Rate: " + (double)correct / sigma * 100 + "%");
 	}
 	
 	public static void main(String args[]) throws IOException
 	{
-		Dataset data = FileHandler.loadDataset(new File("./resources/data/SIMULATED_00011.csv"), 5, ",");
-        Dataset testSet = FileHandler.loadDataset(new File("./resources/data/SIMULATED_00011.csv"), 5, ",");
+		Dataset d = FileHandler.loadDataset(new File("./resources/SIMULATED_00004.csv"), 4, ",");
         NormalizeMidrange nmr = new NormalizeMidrange(1, 2);
         //normalization [0, 2]
-        nmr.build(data);
-        nmr.filter(data);
-        nmr.filter(testSet);
+        nmr.build(d);
+        nmr.filter(d);
+        Dataset[] folds = d.folds(2, new Random());
+        Dataset data = folds[0], testSet = folds[1];
         System.out.print("Please input k:");
         int k,  iter;
         Scanner sc = new Scanner(System.in);
         k = sc.nextInt();
-        System.out.print("Please input number of tests:");
-        iter = sc.nextInt();
-        new KNNTest().TrainandClassifyMultiTime(k, iter, data, testSet);
+        new KNNTest().TrainandClassify(k, data, testSet);
         sc.close();
-	}
-
-	private void TrainandClassifyMultiTime(int k, int iter, Dataset data, Dataset testSet)
-	{
-		double rate = 0;
-		for(int i = 1;i <= iter;i++)
-			rate += new KNNTest().TrainandClassify(k, data, testSet);
-		DecimalFormat df = new DecimalFormat("0.000");
-		JOptionPane.showMessageDialog(null,
-				"In " + iter + " times, Correct rate = " + df.format(rate / iter * 100) + "%",
-				"Classify Result",
-				JOptionPane.INFORMATION_MESSAGE);
 	}
 }
