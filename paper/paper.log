@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.7.7)  24 OCT 2022 15:27
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.7.7)  27 NOV 2022 10:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1199,9 +1199,45 @@ Package: relsize 2013/03/29 ver 4.1
 ) (d:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
+) (d:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
+ (d:/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks50
+\verbatim@line=\toks51
+\verbatim@in@stream=\read6
+) (d:/texlive/2022/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (d:/texlive/2022/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box136
+\tcb@upperbox=\box137
+\tcb@lowerbox=\box138
+\tcb@phantombox=\box139
+\c@tcbbreakpart=\count543
+\c@tcblayer=\count544
+\c@tcolorbox@number=\count545
+\tcb@temp=\box140
+\tcb@temp=\box141
+\tcb@temp=\box142
+\tcb@temp=\box143
+) (d:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '5.1.1'
+\tcb@waterbox=\box144
+(d:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.1.1'
+)) (d:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbminted.code.tex
+Library (tcolorbox): 'tcbminted.code.tex' version '5.1.1'
+(d:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '5.1.1'
+(d:/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
 )
-\@quotelevel=\count543
-\@quotereset=\count544
+\c@tcblisting=\count546
+))
+\@quotelevel=\count547
+\@quotereset=\count548
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > paper.aex <nul: /p x=^%~$PATH:i>> paper.aex)...executed.
 
 runsystem(del paper.aex)...executed.
@@ -1209,27 +1245,27 @@ runsystem(del paper.aex)...executed.
  (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-Package hyperref Info: Link coloring ON on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+Package hyperref Info: Link coloring ON on input line 25.
  (./paper.out) (./paper.out)
 \@outlinefile=\write7
 \openout7 = `paper.out'.
@@ -1290,11 +1326,11 @@ Package biblatex Info: ... file 'paper.bbl' found.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 102.
 )
-Package biblatex Info: Reference section=0 on input line 21.
-Package biblatex Info: Reference segment=0 on input line 21.
+Package biblatex Info: Reference section=0 on input line 25.
+Package biblatex Info: Reference segment=0 on input line 25.
  (d:/texlive/2022/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
-\FN@temptoken=\toks50
+\FN@temptoken=\toks52
 \footnotemargin=\dimen364
 \@outputbox@depth=\dimen365
 Package footmisc Info: Declaring symbol style bringhurst on input line 695.
@@ -1304,58 +1340,121 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
 Package footmisc Info: Declaring symbol style lamport* on input line 743.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 764.
 )
-\c@lstlisting=\count545
+\c@lstlisting=\count549
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 23.
+(Font)              scaled to size 17.28pt on input line 27.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 23.
+(Font)              scaled to size 17.28pt on input line 27.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 23.
+(Font)              scaled to size 12.0pt on input line 27.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 23.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+(Font)              scaled to size 10.0pt on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
  (d:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (d:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 27.
  (d:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 25.
+(Font)              scaled to size 10.0pt on input line 29.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 29.
+(Font)              scaled to size 14.4pt on input line 34.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 29.
+(Font)              scaled to size 14.4pt on input line 34.
+ (./paper.toc
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 44.
-LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 1.
+)
+\tf@toc=\write8
+\openout8 = `paper.toc'.
+
  [1
 
 ]
+LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 59.
+ [2] [3]
+\tcb@out=\write9
+\openout9 = `paper.listing'.
+
+ (./_minted-paper/tango.pygstyle) (./_minted-paper/BC968D98D7EF92A53BD0200AC54FE05230E8DED6625CB79CED539C8CC4EF1D4B.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 2.
+)
+File: ../resources/Before_Cleaning.png Graphic file (type bmp)
+<../resources/Before_Cleaning.png>
+File: ../resources/After_Cleaning.png Graphic file (type bmp)
+<../resources/After_Cleaning.png>
+ [4] [5]
+\openout9 = `paper.listing'.
+
+ (./_minted-paper/A7FAC336342E9B08748355B03140DF90E9B2B04047C288264C0ECEBD0AA4248A.pygtex)
+\openout6 = `paper.pyg'.
+
+ (./_minted-paper/lovelace.pygstyle) (./_minted-paper/6B0EE0108A4B9B3836910EF0D22CA64083ADE6B6803B60E7C3B8D22076EA6A4B.pygtex)
+\openout6 = `paper.pyg'.
+
+ (./_minted-paper/7702310E4D8E15A2FA77715F2196CF8C83ADE6B6803B60E7C3B8D22076EA6A4B.pygtex)
+\openout9 = `paper.listing'.
+
+ (./_minted-paper/C6BE0578C2207723DE640046B75A1B55E9B2B04047C288264C0ECEBD0AA4248A.pygtex)
+\openout9 = `paper.listing'.
+
+ (./_minted-paper/F41B2F9E43468822DFE9D19842B0F20EE9B2B04047C288264C0ECEBD0AA4248A.pygtex) [6]
+\openout9 = `paper.listing'.
+
+ (./_minted-paper/F7F7D2788EE5F46E66D5722F46A9FF24E9B2B04047C288264C0ECEBD0AA4248A.pygtex) [7]
+Overfull \hbox (0.80672pt too wide) in paragraph at lines 281--284
+[]\TU/SimSun(0)/m/n/10.95 在 这 个 函 数 中，|  我 通 过 一 个 \TU/lmtt/m/n/10.95 Set \TU/SimSun(0)/m/n/10.95 来 保 证 取 出 的 $\OML/cmm/m/it/10.95 k$ \TU/SimSun(0)/m/n/10.95 个 数 据 都 是 互 异 的，|  通 过 \TU/lmtt/m/n/10.95 TreeMap \TU/SimSun(0)/m/n/10.95 和 \TU/lmtt/m/n/10.95 HashMap
+ []
+
+\openout9 = `paper.listing'.
+
+(./_minted-paper/25F7A0D2A326F4829B30A9F231A4EAD4E9B2B04047C288264C0ECEBD0AA4248A.pygtex) [8]
+\openout6 = `paper.pyg'.
+
+ (./_minted-paper/74BBBAE1252F80654826FCB38051320083ADE6B6803B60E7C3B8D22076EA6A4B.pygtex)
+Overfull \hbox (14.39474pt too wide) in paragraph at lines 329--332
+\TU/SimSun(0)/m/n/10.95 新 建 对 象 时：| []
+ []
+
+[9]
+\openout9 = `paper.listing'.
+
+ (./_minted-paper/85FBE53D29FA5E948DE008A948DE19A8E9B2B04047C288264C0ECEBD0AA4248A.pygtex)
+\openout9 = `paper.listing'.
+
+ (./_minted-paper/1E98E65F65442548AFBF8076F2F14F7B30E8DED6625CB79CED539C8CC4EF1D4B.pygtex)
+File: ./output.png Graphic file (type bmp)
+<./output.png>
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 96.
+(Font)              scaled to size 9.0pt on input line 396.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 96.
- [2] (./paper.aux)
+(Font)              scaled to size 9.0pt on input line 396.
+ [10] [11] (./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 24F3960A1EF8B014280C61CEBD0D7F42;1482.
+(rerunfilecheck)             Checksum: BC4C6307255133A5F7EDB8896CBFA765;2045.
+runsystem(del paper.pyg)...executed.
+
 Package logreq Info: Writing requests to 'paper.run.xml'.
 \openout1 = `paper.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41568 strings out of 475869
- 870124 string characters out of 5805667
- 1682857 words of memory out of 5000000
- 61919 multiletter control sequences out of 15000+600000
- 480181 words of font info for 122 fonts, out of 8000000 for 9000
+ 45244 strings out of 475869
+ 974054 string characters out of 5805667
+ 1810182 words of memory out of 5000000
+ 65496 multiletter control sequences out of 15000+600000
+ 480245 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,8n,107p,1627b,4958s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,13n,107p,1627b,4863s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on paper.pdf (2 pages).
+Output written on paper.pdf (11 pages).

@@ -15,13 +15,18 @@ public class BayesTest
 
 	public void TrainAndClassify(Dataset train, Dataset test)
 	{
-		NaiveBayesClassifier nbc = new NaiveBayesClassifier(true, false, true);
+		NaiveBayesClassifier nbc = new NaiveBayesClassifier(true, true, false);
 		nbc.buildClassifier(train);
+		double correct = 0;
+		int all = test.size();
 		for(Instance i: test)
 		{
 			Object classifyed = nbc.classify(i);
 			System.out.println(classifyed + " " + i.classValue());
+			if(classifyed.equals(i.classValue()))
+				correct++;
 		}
+		System.out.println(correct / all * 100 + "%");
 	}
 	
 	public static void main(String[] args)throws IOException
