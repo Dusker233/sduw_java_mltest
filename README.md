@@ -15,6 +15,6 @@ pip install pandas
 
 运行 `src/visual.py`，会生成一张可视化的图片。
 
-![output](.\output.png)
+![output](output.png)
 
 其中红色点表示真实数据，黑色点表示预测数据。
