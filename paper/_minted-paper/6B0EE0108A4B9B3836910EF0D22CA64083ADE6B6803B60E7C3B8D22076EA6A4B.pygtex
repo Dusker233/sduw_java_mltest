@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{KNearestNeighbors} \PYG{n}{knn} \PYG{o}{=} \PYG{k}{new} \PYG{n}{KNearestNeighbors}\PYG{p}{(}\PYG{n}{k}\PYG{p}{);}
+\end{Verbatim}

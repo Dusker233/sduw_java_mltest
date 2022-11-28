@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{for}\PYG{p}{(}\PYG{n}{Instance} \PYG{n}{inst}\PYG{p}{:} \PYG{n}{test}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{Object} \PYG{n}{classified} \PYG{o}{=} \PYG{n}{knn}\PYG{p}{.}\PYG{n+na}{classify}\PYG{p}{(}\PYG{n}{inst}\PYG{p}{);}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{classified}\PYG{p}{.}\PYG{n+na}{equals}\PYG{p}{(}\PYG{n}{inst}\PYG{p}{.}\PYG{n+na}{classValue}\PYG{p}{())}
+        \PYG{c+c1}{//correct, do sth}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

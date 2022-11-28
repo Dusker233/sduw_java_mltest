@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{FileWriter} \PYG{n}{fw} \PYG{o}{=} \PYG{k}{new} \PYG{n}{FileWriter}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}./Real\PYGZus{}Ans.csv\PYGZdq{}}\PYG{p}{);}
+\PYG{n}{fw}\PYG{p}{.}\PYG{n+na}{write}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Real\PYGZus{}index,Real\PYGZus{}class\PYGZbs{}n\PYGZdq{}}\PYG{p}{);}
+\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{sigma}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{Instance} \PYG{n}{inst} \PYG{o}{=} \PYG{n}{test}\PYG{p}{.}\PYG{n+na}{instance}\PYG{p}{(}\PYG{n}{ind}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{);}
+    \PYG{n}{fw}\PYG{p}{.}\PYG{n+na}{write}\PYG{p}{(}\PYG{n}{i} \PYG{o}{+} \PYG{l+s}{\PYGZdq{},\PYGZdq{}} \PYG{o}{+} \PYG{n}{inst}\PYG{p}{.}\PYG{n+na}{classValue}\PYG{p}{()} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}\PYGZbs{}n\PYGZdq{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{fw}\PYG{p}{.}\PYG{n+na}{close}\PYG{p}{();}
+\PYG{n}{fw} \PYG{o}{=} \PYG{k}{new} \PYG{n}{FileWriter}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}./Predicted\PYGZus{}Ans.csv\PYGZdq{}}\PYG{p}{);}
+\PYG{n}{fw}\PYG{p}{.}\PYG{n+na}{write}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Predicted\PYGZus{}index,Predicted\PYGZus{}class\PYGZbs{}n\PYGZdq{}}\PYG{p}{);}
+\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{sigma}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{n}{Instance} \PYG{n}{inst} \PYG{o}{=} \PYG{n}{test}\PYG{p}{.}\PYG{n+na}{instance}\PYG{p}{(}\PYG{n}{ind}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{);}
+    \PYG{n}{fw}\PYG{p}{.}\PYG{n+na}{write}\PYG{p}{(}\PYG{n}{i} \PYG{o}{+} \PYG{l+s}{\PYGZdq{},\PYGZdq{}} \PYG{o}{+} \PYG{n}{knn}\PYG{p}{.}\PYG{n+na}{classify}\PYG{p}{(}\PYG{n}{inst}\PYG{p}{)} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}\PYGZbs{}n\PYGZdq{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{fw}\PYG{p}{.}\PYG{n+na}{close}\PYG{p}{();}
+\end{Verbatim}

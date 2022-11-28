@@ -1,0 +1,6 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv('./Real_Ans.csv')
+df1 = pd.read_csv('./Predicted_Ans.csv')
+plt.scatter(df['Real_index'], df['Real_class'], 15, 'red')
+plt.scatter(df1['Predicted_index'], df1['Predicted_class'], 15, 'black')

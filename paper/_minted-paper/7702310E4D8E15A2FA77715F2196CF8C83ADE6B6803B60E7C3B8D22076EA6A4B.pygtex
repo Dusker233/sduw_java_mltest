@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{knn}\PYG{p}{.}\PYG{n+na}{buildClassifier}\PYG{p}{(}\PYG{n}{train}\PYG{p}{)}
+\end{Verbatim}

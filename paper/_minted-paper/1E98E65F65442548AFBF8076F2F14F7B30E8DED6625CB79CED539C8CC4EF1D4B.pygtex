@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./Real\PYGZus{}Ans.csv\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{df1} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./Predicted\PYGZus{}Ans.csv\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Real\PYGZus{}index\PYGZsq{}}\PYG{p}{],} \PYG{n}{df}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Real\PYGZus{}class\PYGZsq{}}\PYG{p}{],} \PYG{l+m+mi}{15}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}red\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{df1}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Predicted\PYGZus{}index\PYGZsq{}}\PYG{p}{],} \PYG{n}{df1}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}Predicted\PYGZus{}class\PYGZsq{}}\PYG{p}{],} \PYG{l+m+mi}{15}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}black\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

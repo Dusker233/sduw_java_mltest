@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n}{Dataset} \PYG{n}{d} \PYG{o}{=} \PYG{n}{FileHandler}\PYG{p}{.}\PYG{n+na}{loadDataset}\PYG{p}{(}\PYG{k}{new} \PYG{n}{File}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}./resources/SIMULATED\PYGZus{}00004.csv\PYGZdq{}}\PYG{p}{),} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+s}{\PYGZdq{},\PYGZdq{}}\PYG{p}{);}
+\PYG{n}{NormalizeMidrange} \PYG{n}{nmr} \PYG{o}{=} \PYG{k}{new} \PYG{n}{NormalizeMidrange}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{);}
+\PYG{n}{nmr}\PYG{p}{.}\PYG{n+na}{build}\PYG{p}{(}\PYG{n}{d}\PYG{p}{);}
+\PYG{n}{nmr}\PYG{p}{.}\PYG{n+na}{filter}\PYG{p}{(}\PYG{n}{d}\PYG{p}{);}
+\end{Verbatim}

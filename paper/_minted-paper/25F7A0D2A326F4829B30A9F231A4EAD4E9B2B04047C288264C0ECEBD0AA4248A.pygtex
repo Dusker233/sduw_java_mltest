@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k+kd}{public} \PYG{n}{Object} \PYG{n+nf}{classify}\PYG{p}{(}\PYG{n}{Instance} \PYG{n}{inst}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+	\PYG{k}{if}\PYG{p}{(}\PYG{n}{d} \PYG{o}{==} \PYG{k+kc}{null}\PYG{p}{)}
+		\PYG{k}{throw} \PYG{k}{new} \PYG{n}{RuntimeException}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Training dataset is null\PYGZdq{}}\PYG{p}{);}
+	\PYG{n}{Set}\PYG{o}{\PYGZlt{}}\PYG{n}{Instance}\PYG{o}{\PYGZgt{}} \PYG{n}{NearNeighbors} \PYG{o}{=} \PYG{n}{kNearest}\PYG{p}{(}\PYG{n}{inst}\PYG{p}{);}
+	\PYG{n}{Object}\PYG{o}{[]} \PYG{n}{ExpectedClass} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Object}\PYG{o}{[}\PYG{n}{k}\PYG{o}{]}\PYG{p}{;}
+	\PYG{k+kt}{int} \PYG{n}{index} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+	\PYG{k}{for}\PYG{p}{(}\PYG{n}{Instance} \PYG{n}{i}\PYG{p}{:} \PYG{n}{NearNeighbors}\PYG{p}{)}
+		\PYG{n}{ExpectedClass}\PYG{o}{[}\PYG{n}{index}\PYG{o}{++]} \PYG{o}{=} \PYG{n}{i}\PYG{p}{.}\PYG{n+na}{classValue}\PYG{p}{();}
+	\PYG{n}{HashMap}\PYG{o}{\PYGZlt{}}\PYG{n}{Object}\PYG{p}{,} \PYG{n}{Integer}\PYG{o}{\PYGZgt{}} \PYG{n}{map} \PYG{o}{=} \PYG{k}{new} \PYG{n}{HashMap}\PYG{o}{\PYGZlt{}\PYGZgt{}}\PYG{p}{();}
+	\PYG{k}{for}\PYG{p}{(}\PYG{n}{Object} \PYG{n}{i}\PYG{p}{:} \PYG{n}{ExpectedClass}\PYG{p}{)}
+	\PYG{p}{\PYGZob{}}
+		\PYG{k}{if}\PYG{p}{(}\PYG{n}{map}\PYG{p}{.}\PYG{n+na}{containsKey}\PYG{p}{(}\PYG{n}{i}\PYG{p}{))}
+		\PYG{p}{\PYGZob{}}
+			\PYG{k+kt}{int} \PYG{n}{tmp} \PYG{o}{=} \PYG{n}{map}\PYG{p}{.}\PYG{n+na}{get}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}
+			\PYG{n}{map}\PYG{p}{.}\PYG{n+na}{put}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{tmp} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{);}
+		\PYG{p}{\PYGZcb{}}
+		\PYG{k}{else}
+			\PYG{n}{map}\PYG{p}{.}\PYG{n+na}{put}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{n}{Collection}\PYG{o}{\PYGZlt{}}\PYG{n}{Integer}\PYG{o}{\PYGZgt{}} \PYG{n}{count} \PYG{o}{=} \PYG{n}{map}\PYG{p}{.}\PYG{n+na}{values}\PYG{p}{();}
+	\PYG{k+kt}{int} \PYG{n}{Maxcount} \PYG{o}{=} \PYG{n}{Collections}\PYG{p}{.}\PYG{n+na}{max}\PYG{p}{(}\PYG{n}{count}\PYG{p}{);}
+	\PYG{k}{for}\PYG{p}{(}\PYG{n}{Map}\PYG{p}{.}\PYG{n+na}{Entry}\PYG{o}{\PYGZlt{}}\PYG{n}{Object}\PYG{p}{,} \PYG{n}{Integer}\PYG{o}{\PYGZgt{}} \PYG{n}{e}\PYG{p}{:} \PYG{n}{map}\PYG{p}{.}\PYG{n+na}{entrySet}\PYG{p}{())}
+		\PYG{k}{if}\PYG{p}{(}\PYG{n}{Maxcount} \PYG{o}{==} \PYG{n}{e}\PYG{p}{.}\PYG{n+na}{getValue}\PYG{p}{())}
+			\PYG{k}{return} \PYG{n}{e}\PYG{p}{.}\PYG{n+na}{getKey}\PYG{p}{();}
+	\PYG{k}{return} \PYG{k+kc}{null}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{NaiveBayesClassifier} \PYG{n}{nbc} \PYG{o}{=} \PYG{k}{new} \PYG{n}{NaiveBayesClassifier}\PYG{p}{(}\PYG{k+kc}{true}\PYG{p}{,} \PYG{k+kc}{true}\PYG{p}{,} \PYG{k+kc}{false}\PYG{p}{);}
+\end{Verbatim}
